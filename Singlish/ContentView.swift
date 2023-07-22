@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.dismiss) var dismiss
     @State var popUp = true
     var body: some View {
         VStack {
@@ -16,11 +17,20 @@ struct ContentView: View {
                 .bold()
             HStack {
                 Button {
-                    
+                    dismiss()
                 } label: {
                     Text("Start")
                 }
                 .buttonBorderShape(.roundedRectangle)
+                .buttonStyle(.borderedProminent)
+                
+                Button {
+                    
+                } label: {
+                    Text("T&Cs")
+                }
+                .buttonBorderShape(.roundedRectangle)
+                .buttonStyle(.bordered)
             }
         }
         .onAppear() {

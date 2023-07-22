@@ -12,6 +12,7 @@
 		F14025C22A6B71B8005BAF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14025C12A6B71B8005BAF7D /* Assets.xcassets */; };
 		F14025C52A6B71B8005BAF7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14025C42A6B71B8005BAF7D /* Preview Assets.xcassets */; };
 		F14025CC2A6B7BD3005BAF7D /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14025CB2A6B7BD3005BAF7D /* AdView.swift */; };
+		F1AC4AF82A6B7F130011D7B0 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AC4AF72A6B7F130011D7B0 /* MainContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		F14025C12A6B71B8005BAF7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F14025C42A6B71B8005BAF7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F14025CB2A6B7BD3005BAF7D /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
+		F1AC4AF72A6B7F130011D7B0 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				F14025BD2A6B71B6005BAF7D /* SinglishApp.swift */,
+				F1AC4AF72A6B7F130011D7B0 /* MainContentView.swift */,
 				F14025BF2A6B71B6005BAF7D /* ContentView.swift */,
 				F14025C12A6B71B8005BAF7D /* Assets.xcassets */,
 				F14025CB2A6B7BD3005BAF7D /* AdView.swift */,
@@ -143,6 +146,7 @@
 				F14025CC2A6B7BD3005BAF7D /* AdView.swift in Sources */,
 				F14025C02A6B71B6005BAF7D /* ContentView.swift in Sources */,
 				F14025BE2A6B71B6005BAF7D /* SinglishApp.swift in Sources */,
+				F1AC4AF82A6B7F130011D7B0 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

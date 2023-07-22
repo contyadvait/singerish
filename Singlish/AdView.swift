@@ -25,8 +25,8 @@ struct AdView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Image(systemName: "xmark.circle")
-                    Text("Dismiss Ad")
+                    Image(systemName: "dollarsign.circle.fill")
+                    Text("Purchase Now (Not refundable)")
                 }
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
