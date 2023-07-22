@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "mac-card-50-compare-models-202203.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "mac-card-50-compare-models-202203 1.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "mac-card-50-compare-models-202203 2.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

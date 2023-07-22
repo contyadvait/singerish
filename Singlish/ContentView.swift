@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var popUp = true
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Singlish Tutorial")
+                .font(.system(size: 40, weight: .regular, design: .rounded))
+                .bold()
+            HStack {
+                Button {
+                    
+                } label: {
+                    Text("Start")
+                }
+                .buttonBorderShape(.roundedRectangle)
+            }
         }
-        .padding()
+        .onAppear() {
+            popUp = true
+        }
+        .fullScreenCover(isPresented: $popUp) {
+            AdView()
+        }
     }
 }
 
