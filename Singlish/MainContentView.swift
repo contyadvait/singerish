@@ -13,20 +13,7 @@ struct MainContentView: View {
     @State var openHomeScreen = true
     var body: some View {
         TabView {
-            VStack(spacing: 10) {
-                Text("Let's start with the basics:\nLah, leh and lor!")
-                    .font(.system(size: 40, weight: .semibold))
-                    .multilineTextAlignment(.center)
-                HStack {
-                    Text("Lah")
-                    Button {
-                        let utterance = AVSpeechUtterance(string: "lah")
-                        synthesizer.speak(utterance)
-                    } label: {
-                        Image(systemName: "speaker.wave.2.circle.fill")
-                    }
-                }
-            }
+LahLehLorView()
                 .tabItem {
                     Label("First Page", systemImage: "one.circle")
                 }
