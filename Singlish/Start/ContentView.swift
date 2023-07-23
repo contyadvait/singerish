@@ -12,7 +12,8 @@ struct ContentView: View {
     @State var popUp = true
     var body: some View {
         VStack {
-            Text("Singlish Tutorial")
+            Text("􀎟")
+            Text("Home")
                 .font(.system(size: 40, weight: .regular, design: .rounded))
                 .bold()
             HStack {
@@ -37,7 +38,7 @@ struct ContentView: View {
             popUp = true
         }
         .fullScreenCover(isPresented: $popUp) {
-            AdView()
+            NokiaAdView()
         }
     }
 }

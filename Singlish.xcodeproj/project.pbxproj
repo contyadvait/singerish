@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10002FE2A6CEBF300A80220 /* LahView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10002FD2A6CEBF300A80220 /* LahView.swift */; };
+		F10003002A6CEC9A00A80220 /* LehView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10002FF2A6CEC9A00A80220 /* LehView.swift */; };
+		F10003022A6CED5C00A80220 /* OtherCommonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10003012A6CED5C00A80220 /* OtherCommonsView.swift */; };
+		F100030B2A6D086B00A80220 /* BasicMalayWordsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100030A2A6D086B00A80220 /* BasicMalayWordsDatabase.swift */; };
+		F100030E2A6D10A300A80220 /* OmissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100030D2A6D10A300A80220 /* OmissionsView.swift */; };
+		F10003112A6D183A00A80220 /* PronunciationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10003102A6D183A00A80220 /* PronunciationView.swift */; };
+		F10003132A6D187600A80220 /* PronunciationWordsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10003122A6D187600A80220 /* PronunciationWordsDatabase.swift */; };
 		F14025BE2A6B71B6005BAF7D /* SinglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14025BD2A6B71B6005BAF7D /* SinglishApp.swift */; };
 		F14025C02A6B71B6005BAF7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14025BF2A6B71B6005BAF7D /* ContentView.swift */; };
 		F14025C22A6B71B8005BAF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14025C12A6B71B8005BAF7D /* Assets.xcassets */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10002FD2A6CEBF300A80220 /* LahView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LahView.swift; sourceTree = "<group>"; };
+		F10002FF2A6CEC9A00A80220 /* LehView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LehView.swift; sourceTree = "<group>"; };
+		F10003012A6CED5C00A80220 /* OtherCommonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCommonsView.swift; sourceTree = "<group>"; };
+		F100030A2A6D086B00A80220 /* BasicMalayWordsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMalayWordsDatabase.swift; sourceTree = "<group>"; };
+		F100030D2A6D10A300A80220 /* OmissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmissionsView.swift; sourceTree = "<group>"; };
+		F10003102A6D183A00A80220 /* PronunciationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationView.swift; sourceTree = "<group>"; };
+		F10003122A6D187600A80220 /* PronunciationWordsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationWordsDatabase.swift; sourceTree = "<group>"; };
 		F14025BA2A6B71B6005BAF7D /* Singlish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Singlish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14025BD2A6B71B6005BAF7D /* SinglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglishApp.swift; sourceTree = "<group>"; };
 		F14025BF2A6B71B6005BAF7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +54,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10003052A6D038F00A80220 /* Page 1 */ = {
+			isa = PBXGroup;
+			children = (
+				F1AC4AF92A6B85420011D7B0 /* LahLehLorView.swift */,
+				F10002FF2A6CEC9A00A80220 /* LehView.swift */,
+				F10003012A6CED5C00A80220 /* OtherCommonsView.swift */,
+				F10002FD2A6CEBF300A80220 /* LahView.swift */,
+			);
+			path = "Page 1";
+			sourceTree = "<group>";
+		};
+		F10003062A6D03BC00A80220 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				F14025CB2A6B7BD3005BAF7D /* AdView.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		F10003072A6D03DA00A80220 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				F14025BF2A6B71B6005BAF7D /* ContentView.swift */,
+				F1AC4AF72A6B7F130011D7B0 /* MainContentView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		F10003082A6D03EF00A80220 /* Navigation Links */ = {
+			isa = PBXGroup;
+			children = (
+				F10003052A6D038F00A80220 /* Page 1 */,
+				F10003092A6D080600A80220 /* Page 2 */,
+				F100030C2A6D106500A80220 /* Page 3 */,
+				F100030F2A6D181D00A80220 /* Page 4 */,
+			);
+			path = "Navigation Links";
+			sourceTree = "<group>";
+		};
+		F10003092A6D080600A80220 /* Page 2 */ = {
+			isa = PBXGroup;
+			children = (
+				F1AC4AFB2A6B8AE40011D7B0 /* BasicMalayWords.swift */,
+				F100030A2A6D086B00A80220 /* BasicMalayWordsDatabase.swift */,
+			);
+			path = "Page 2";
+			sourceTree = "<group>";
+		};
+		F100030C2A6D106500A80220 /* Page 3 */ = {
+			isa = PBXGroup;
+			children = (
+				F100030D2A6D10A300A80220 /* OmissionsView.swift */,
+			);
+			path = "Page 3";
+			sourceTree = "<group>";
+		};
+		F100030F2A6D181D00A80220 /* Page 4 */ = {
+			isa = PBXGroup;
+			children = (
+				F10003102A6D183A00A80220 /* PronunciationView.swift */,
+				F10003122A6D187600A80220 /* PronunciationWordsDatabase.swift */,
+			);
+			path = "Page 4";
+			sourceTree = "<group>";
+		};
 		F14025B12A6B71B6005BAF7D = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				F14025BD2A6B71B6005BAF7D /* SinglishApp.swift */,
-				F1AC4AF72A6B7F130011D7B0 /* MainContentView.swift */,
-				F1AC4AF92A6B85420011D7B0 /* LahLehLorView.swift */,
-				F1AC4AFB2A6B8AE40011D7B0 /* BasicMalayWords.swift */,
-				F14025BF2A6B71B6005BAF7D /* ContentView.swift */,
+				F10003072A6D03DA00A80220 /* Start */,
+				F10003082A6D03EF00A80220 /* Navigation Links */,
 				F14025C12A6B71B8005BAF7D /* Assets.xcassets */,
-				F14025CB2A6B7BD3005BAF7D /* AdView.swift */,
+				F10003062A6D03BC00A80220 /* Ads */,
 				F14025C32A6B71B8005BAF7D /* Preview Content */,
 			);
 			path = Singlish;
@@ -150,11 +227,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14025CC2A6B7BD3005BAF7D /* AdView.swift in Sources */,
+				F10003022A6CED5C00A80220 /* OtherCommonsView.swift in Sources */,
 				F1AC4AFA2A6B85420011D7B0 /* LahLehLorView.swift in Sources */,
 				F14025C02A6B71B6005BAF7D /* ContentView.swift in Sources */,
+				F100030E2A6D10A300A80220 /* OmissionsView.swift in Sources */,
 				F1AC4AFC2A6B8AE40011D7B0 /* BasicMalayWords.swift in Sources */,
+				F10003132A6D187600A80220 /* PronunciationWordsDatabase.swift in Sources */,
+				F10003002A6CEC9A00A80220 /* LehView.swift in Sources */,
+				F100030B2A6D086B00A80220 /* BasicMalayWordsDatabase.swift in Sources */,
 				F14025BE2A6B71B6005BAF7D /* SinglishApp.swift in Sources */,
 				F1AC4AF82A6B7F130011D7B0 /* MainContentView.swift in Sources */,
+				F10003112A6D183A00A80220 /* PronunciationView.swift in Sources */,
+				F10002FE2A6CEBF300A80220 /* LahView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
