@@ -12,31 +12,33 @@ struct MainContentView: View {
     let synthesizer = AVSpeechSynthesizer()
     @State var openHomeScreen = true
     var body: some View {
-        TabView {
-            LahLehLorView()
-                .tabItem {
-                    Label("First Page", systemImage: "1.circle.fill")
-                }
-            
-            BasicMalayWords()
-                .tabItem {
-                    Label("Second Page", systemImage: "2.circle.fill")
-                }
-            
-            BasicMalayWords()
-                .tabItem {
-                    Label("Third Page", systemImage: "3.circle.fill")
-                }
-            
-            PronunciationView()
-                .tabItem {
-                    Label("Fourth Page", systemImage: "4.circle.fill")
-                }
+        VStack {
+            TabView {
+                LahLehLorView()
+                    .tabItem {
+                        Label("First Page", systemImage: "1.circle.fill")
+                    }
+                
+                BasicMalayWords()
+                    .tabItem {
+                        Label("Second Page", systemImage: "2.circle.fill")
+                    }
+                
+                BasicMalayWords()
+                    .tabItem {
+                        Label("Third Page", systemImage: "3.circle.fill")
+                    }
+                
+                PronunciationView()
+                    .tabItem {
+                        Label("Fourth Page", systemImage: "4.circle.fill")
+                    }
+            }
+            .tabViewStyle(.page)
         }
-        .tabViewStyle(.page)
-                .fullScreenCover(isPresented: $openHomeScreen) {
-                    ContentView()
-                }
+        .fullScreenCover(isPresented: $openHomeScreen) {
+                ContentView()
+            }
     }
 }
 

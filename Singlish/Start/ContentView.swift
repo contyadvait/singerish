@@ -12,7 +12,8 @@ struct ContentView: View {
     @State var popUp = true
     var body: some View {
         VStack {
-            Text("􀎟")
+            Image(systemName: "house.fill")
+                .font(.system(size: 40, weight: .regular, design: .rounded))
             Text("Home")
                 .font(.system(size: 40, weight: .regular, design: .rounded))
                 .bold()
