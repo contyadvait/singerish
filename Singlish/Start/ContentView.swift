@@ -25,14 +25,6 @@ struct ContentView: View {
                 }
                 .buttonBorderShape(.roundedRectangle)
                 .buttonStyle(.borderedProminent)
-                
-                Button {
-                    
-                } label: {
-                    Text("T&Cs")
-                }
-                .buttonBorderShape(.roundedRectangle)
-                .buttonStyle(.bordered)
             }
         }
         .onAppear() {

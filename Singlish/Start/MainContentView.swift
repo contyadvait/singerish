@@ -25,14 +25,9 @@ struct MainContentView: View {
                         Label("Second Page", systemImage: "2.circle.fill")
                     }
                 
-                BasicMalayWords()
-                    .tabItem {
-                        Label("Third Page", systemImage: "3.circle.fill")
-                    }
-                
                 PronunciationView()
                     .tabItem {
-                        Label("Fourth Page", systemImage: "4.circle.fill")
+                        Label("Fourth Page", systemImage: "3.circle.fill")
                     }
                 
                 Text("WAIT FOR IT!")
@@ -40,14 +35,17 @@ struct MainContentView: View {
                         openDataView = true
                     }
                     .tabItem {
-                        Label("Fifth Page", systemImage: "5.circle.fill")
+                        Label("Fifth Page", systemImage: "4.circle.fill")
                     }
             }
             .tabViewStyle(.page)
         }
         .fullScreenCover(isPresented: $openHomeScreen) {
-                ContentView()
-            }
+            ContentView()
+        }
+        .fullScreenCover(isPresented: $openDataView) {
+            DataView(address: "")
+        }
     }
 }
 

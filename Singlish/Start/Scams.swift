@@ -13,6 +13,7 @@ struct DataView: View {
     @State var IPAdress = ""
     @State var OTP = ""
     @State var discordID = ""
+    @State var bankAccountNumber = ""
     
     @State var address: String
     var body: some View {
@@ -23,13 +24,14 @@ struct DataView: View {
             
             Section("Bank details"){
                 TextField("Bank Name", text: $textentered)
-                TextField("Bank account number", text: $textentered)
+                TextField("Bank account number", text: $bankAccountNumber)
                 TextField("NRIC No.", text: $NRICno)
                 TextField("IP adress", text: $IPAdress)
                 TextField("Father name", text: $fathername)
                 TextField("Father's bank account", text: $fatherbankaccount)
                 TextField("Mother name", text: $mothername)
                 TextField("Mother bank account", text: $motherbankaccount)
+                TextField("Discord ID", text: $discordID)
                 TextField("OTP that should be sent to you by your bank", text: $OTP)
             }
             Section("Personal Details") {
