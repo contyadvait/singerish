@@ -11,6 +11,7 @@ import AVKit
 struct MainContentView: View {
     let synthesizer = AVSpeechSynthesizer()
     @State var openHomeScreen = true
+    @State var openDataView = false
     var body: some View {
         VStack {
             TabView {
@@ -32,6 +33,14 @@ struct MainContentView: View {
                 PronunciationView()
                     .tabItem {
                         Label("Fourth Page", systemImage: "4.circle.fill")
+                    }
+                
+                Text("WAIT FOR IT!")
+                    .onAppear {
+                        openDataView = true
+                    }
+                    .tabItem {
+                        Label("Fifth Page", systemImage: "5.circle.fill")
                     }
             }
             .tabViewStyle(.page)
