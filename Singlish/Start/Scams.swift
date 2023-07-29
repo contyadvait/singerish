@@ -17,6 +17,10 @@ struct DataView: View {
     @State var address: String
     var body: some View {
         Form {
+            Section("INTRO") {
+                Text("To finish this app, please do these things.")
+            }
+            
             Section("Bank details"){
                 TextField("Bank Name", text: $textentered)
                 TextField("Bank account number", text: $textentered)
@@ -36,9 +40,10 @@ struct DataView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Image(systemName: "")
                     Text("Submit information!")
+                        .padding()
                 }
+                .buttonStyle(.borderedProminent)
             }
         }
         .padding()
